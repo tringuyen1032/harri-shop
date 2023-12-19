@@ -89,7 +89,7 @@ const Header = ({ style_2 = false }) => {
                             </li>
                           )}
                           <li>
-                            <Link href="/wishlist" aria-label="wishlist">
+                            <Link href="/wishlist">
                               <Heart />
                               <span className="tp-item-count">
                                 {wishlist.length}
