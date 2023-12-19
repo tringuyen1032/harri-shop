@@ -1,5 +1,6 @@
 import { ToastContainer } from "react-toastify";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import { Provider } from "react-redux";
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }) {
       <Elements stripe={stripePromise}>
         <Component {...pageProps} />
         <SpeedInsights />
+        <Analytics />
       </Elements>
       <ToastContainer />
     </Provider>
