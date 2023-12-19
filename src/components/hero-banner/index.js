@@ -5,7 +5,7 @@ import Link from "next/link";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { EffectFade } from "swiper";
 // internal
-import slider_img_1 from "@assets/img/slider/13/slider-1.webp";
+import slider_img_1 from "@assets/img/slider/13/slider-1.png";
 // import slider_img_2 from "@assets/img/slider/13/slider-1.png";
 // import slider_img_3 from "@assets/img/slider/13/slider-1.png";
 import { RightArrow } from "@svg/index";
