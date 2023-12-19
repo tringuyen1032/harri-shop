@@ -31,7 +31,7 @@ const SocialLinks = () => {
   return (
     <>
       {social_links.map((l, i) => (
-        <a key={i} href={l.link} target={l.target}>
+        <a key={i} href={l.link} target={l.target} aria-label={l.name}>
           <i className={l.icon}></i>
         </a>
       ))}
@@ -46,7 +46,7 @@ export function SocialShare() {
   return (
     <>
       {social_links.slice(0, 3).map((l, i) => (
-        <a key={i} href={l.link} target={l.target}>
+        <a key={i} href={l.link} target={l.target} aria-label={l.name}>
           <i className={l.icon}></i>
         </a>
       ))}

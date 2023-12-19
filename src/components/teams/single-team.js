@@ -18,19 +18,19 @@ const SingleTeam = ({item}) => {
         <div className="team__action">
           <ul>
             <li>
-              <a href={mail}>
+              <a href={mail} aria-label="mail">
                 <i className="far fa-envelope"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" aria-label="share">
                 <i className="far fa-share-alt"></i>
               </a>
               <div className="team__social">
                 <ul>
                   {social_links.map((l, i) => (
                     <li key={i}>
-                      <a href={l.link} target={l.target}>
+                      <a href={l.link} target={l.target} aria-label="social">
                         <i className={l.icon}></i>
                       </a>
                     </li>

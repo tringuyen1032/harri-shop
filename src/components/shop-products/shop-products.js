@@ -60,7 +60,7 @@ const ShopProducts = ({ element_style = false }) => {
                           className={`nav-link ${
                             activeTab === tab ? "active" : ""
                           }`}
-                          id="top-tab"
+                          id={tab}
                           type="button"
                         >
                           {tab}

@@ -8,7 +8,7 @@ const SingleCategory = ({ item }) => {
   return (
     <div className="product__category-item mb-20 text-center">
       <div className="product__category-thumb w-img">
-        <a
+        <a href="#" aria-label="category image"
           onClick={() =>
             router.push(
               `/shop?Category=${item.parent
@@ -31,7 +31,7 @@ const SingleCategory = ({ item }) => {
       </div>
       <div className="product__category-content">
         <h3 className="product__category-title">
-          <a
+          <a href="#" aria-label="category"
             onClick={() =>
               router.push(
                 `/shop?Category=${item.parent

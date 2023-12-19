@@ -54,7 +54,7 @@ const Header = ({ style_2 = false }) => {
                       <div className="header__action-13 d-none d-md-block">
                         <ul>
                           <li className="d-xxl-none">
-                            <a href="#">
+                            <a href="#" aria-label="search">
                               <Search />
                             </a>
                           </li>

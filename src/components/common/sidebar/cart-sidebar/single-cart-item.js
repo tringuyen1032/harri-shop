@@ -22,7 +22,7 @@ const SingleCartItem = ({ item }) => {
       </div>
       <div className="cartmini__content">
         <h5>
-          <a href={`/product-details/${_id}`}>{title}</a>
+          <a href={`/product-details/${_id}`} aria-label={title}>{title}</a>
         </h5>
         <div className="cartmini__price-wrapper">
           {!discount && (

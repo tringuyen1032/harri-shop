@@ -23,6 +23,7 @@ const OffCanvas = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             <button
               onClick={() => setIsOffCanvasOpen(false)}
               className="offcanvas__close-btn offcanvas-close-btn"
+              aria-label="Close"
             >
               <i className="fa-regular fa-xmark"></i>
             </button>
@@ -43,7 +44,7 @@ const OffCanvas = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
               </div>
             </div>
             <div className="offcanvas__btn">
-              <a href="#" className="tp-btn-offcanvas">
+              <a href="#" className="tp-btn-offcanvas" aria-label="getting started">
                 Getting Started <i className="fa-regular fa-chevron-right"></i>
               </a>
             </div>
@@ -53,10 +54,10 @@ const OffCanvas = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             </div>
             <div className="offcanvas__contact">
               <p className="offcanvas__contact-call">
-                <a href="tel:+964-742-44-763">+964 742 44 763</a>
+                <a href="tel:+964-742-44-763" aria-label="phone">+964 742 44 763</a>
               </p>
               <p className="offcanvas__contact-mail">
-                <a href="mailto:info@harry.com">info@harry.com</a>
+                <a href="mailto:info@harry.com" aria-label="mail">info@harry.com</a>
               </p>
             </div>
           </div>

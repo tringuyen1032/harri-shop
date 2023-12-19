@@ -37,7 +37,7 @@ const MobileMenus = () => {
                     </li>
                   ))}
                 </ul>
-                <a
+                <a aria-label="expand"
                   className={`mean-expand ${
                     navTitle === menu.title ? "mean-clicked" : ""
                   }`}

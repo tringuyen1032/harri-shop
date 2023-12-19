@@ -55,7 +55,7 @@ const ShopCategory = () => {
               <ul>
                 {category.children.map((item, i) => (
                   <li key={i}>
-                    <a
+                    <a href="#" aria-label="category"
                       onClick={() =>
                         router.push(
                           `/shop?category=${item

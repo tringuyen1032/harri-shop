@@ -13,7 +13,7 @@ const ShopBreadcrumb = () => {
                   <Home />
                 </span>
                 <span>
-                  <a href="#">Home</a>
+                  <a href="#" aria-label="home">Home</a>
                 </span>
                 <span className="dvdr">
                   <i className="fa-regular fa-angle-right"></i>

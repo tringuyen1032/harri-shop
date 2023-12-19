@@ -27,13 +27,13 @@ const SingleCategory = ({ category, index }) => {
           <div className="categories__list">
             <ul>
               <li>
-                <a href="#">Catagories 1</a>
+                <a href="#" aria-label="categories 1">Catagories 1</a>
               </li>
               <li>
-                <a href="#">Catagories 2</a>
+                <a href="#"aria-label="categories 2">Catagories 2</a>
               </li>
               <li>
-                <a href="#">Catagories 3</a>
+                <a href="#" aria-label="categories 3">Catagories 3</a>
               </li>
             </ul>
           </div>

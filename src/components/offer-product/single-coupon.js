@@ -14,7 +14,7 @@ const SingleCoupon = ({ coupon,handleCopied,copiedCode,copied }) => {
           <span className="product__coupon-border"></span>
           <div className="product__coupon-item-left d-sm-flex align-items-center">
             <div className="product__coupon-thumb">
-              <a href="#">
+              <a href="#" aria-label="coupon logo">
                 <Image src={coupon.logo} alt="logo" width={120} height={120} />
               </a>
             </div>

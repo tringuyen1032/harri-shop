@@ -25,6 +25,7 @@ const CartSidebar = ({ isCartOpen, setIsCartOpen }) => {
                   onClick={() => setIsCartOpen(false)}
                   type="button"
                   className="cartmini__close-btn cartmini-close-btn"
+                  aria-label="Close"
                 >
                   <i className="fal fa-times"></i>
                 </button>
