@@ -55,59 +55,68 @@ const slider_data = [
 ];
 
 const HeroBanner = () => {
-  const [loop,setLoop] = useState(false);
-  useEffect(() => setLoop(true),[]);
+  const [loop, setLoop] = useState(false);
+  useEffect(() => setLoop(true), []);
   return (
     <>
       <section className="slider__area">
-        <Swiper
-          className="slider__active slider__active-13 swiper-container"
+        {/* <Swiper */}
+        <div
+          // className="slider__active slider__active-13 swiper-container"
           slidesPerView={1}
-          spaceBetween={0}
-          effect="fade"
-          loop={loop}
-          modules={[EffectFade]}
+        // spaceBetween={0}
+        // effect="fade"
+        // loop={loop}
+        // modules={[EffectFade]}
         >
-          {slider_data.map((item) => (
-            <SwiperSlide
-              key={item.id}
-              className="slider__item-13 slider__height-13 grey-bg-17 d-flex align-items-end"
-            >
-              <div className="container">
-                <div className="row align-self-end">
-                  <div className="col-xl-6 col-lg-6">
-                    <div className="slider__content-13">
-                      <span className="slider__title-pre-13">
-                        {item.pre_title}
-                      </span>
-                      <h3 className="slider__title-13">{item.title}</h3>
+          {/* {slider_data.map((item) => ( */}
+          {/* <SwiperSlide */}
+          <div
+            // key={item.id}
+            className="slider__item-13 slider__height-13 grey-bg-17 d-flex align-items-end"
+          >
+            <div className="container">
+              <div className="row align-self-end">
+                <div className="col-xl-6 col-lg-6">
+                  <div className="slider__content-13">
+                    <span className="slider__title-pre-13">
+                      {/* {item.pre_title} */}
+                      Best Ear <br /> Headphones
+                    </span>
+                    <h3 className="slider__title-13">
+                      {/* {item.title} */}
+                      Find Best <br /> Matley Sound.
+                    </h3>
 
-                      <div className="slider__btn-13 ">
-                        <Link href="/shop" className="tp-btn-border">
-                          Shop Now
-                          <span>
-                            <RightArrow />
-                          </span>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-xl-6 col-lg-6">
-                    <div className="slider__thumb-13 text-end mr-40">
-                      <span className="slider__thumb-13-circle-1"></span>
-                      <span className="slider__thumb-13-circle-2"></span>
-                      <Image
-                        src={item.img}
-                        alt="slider img"
-                        priority
-                      />
+                    <div className="slider__btn-13 ">
+                      <Link href="/shop" className="tp-btn-border">
+                        Shop Now
+                        <span>
+                          <RightArrow />
+                        </span>
+                      </Link>
                     </div>
                   </div>
                 </div>
+                <div className="col-xl-6 col-lg-6">
+                  <div className="slider__thumb-13 text-end mr-40">
+                    <span className="slider__thumb-13-circle-1"></span>
+                    <span className="slider__thumb-13-circle-2"></span>
+                    <Image
+                      // src={item.img}
+                      src={slider_img_1}
+                      alt="slider img"
+                      priority
+                    />
+                  </div>
+                </div>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+            </div>
+            {/* </SwiperSlide> */}
+          </div>
+          {/* ))} */}
+          {/* </Swiper> */}
+        </div>
       </section>
     </>
   );
