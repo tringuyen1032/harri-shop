@@ -103,13 +103,13 @@ const HeroBanner = () => {
                   <div className="slider__thumb-13 text-end mr-40">
                     <span className="slider__thumb-13-circle-1"></span>
                     <span className="slider__thumb-13-circle-2"></span>
-                    <Image
+                    {/* <Image
                       // src={item.img}
                       src={slider_img_1}
                       alt="slider img"
                       priority={true}
                       className="position-relative z-1"
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
