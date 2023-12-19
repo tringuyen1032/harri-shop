@@ -31,7 +31,7 @@ const SingleCategory = ({ item }) => {
       </div>
       <div className="product__category-content">
         <h3 className="product__category-title">
-          <a href="#" aria-label="category"
+          <a href="#" aria-label={item.parent}
             onClick={() =>
               router.push(
                 `/shop?Category=${item.parent

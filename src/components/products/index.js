@@ -69,7 +69,7 @@ const ShopProducts = () => {
                         className={`nav-link text-capitalize ${
                           activeTab === tab ? "active" : ""
                         }`}
-                        id="top-tab"
+                        id={tab}
                         type="button"
                       >
                         {tab.split("-").join(" ")}

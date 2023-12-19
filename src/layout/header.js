@@ -60,7 +60,7 @@ const Header = ({ style_2 = false }) => {
                           </li>
                           {userInfo?.imageURL ? (
                             <li>
-                              <Link href="/user-dashboard">
+                              <Link href="/user-dashboard" aria-label="user">
                                 <Image
                                   src={userInfo.imageURL}
                                   alt="user img"

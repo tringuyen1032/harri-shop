@@ -109,17 +109,17 @@ const Footer = () => {
                     <div className="footer__widget-content">
                       <p className="footer__text">
                         Find a location nearest you. See{" "}
-                        <a href="#" aria-label="map" >Our Stores</a>
+                        <a href="#" aria-label="Our Stores" >Our Stores</a>
                       </p>
                       <div className="footer__contact">
                         <div className="footer__contact-call">
                           <span>
-                            <a href="tel:624-423-26-72" aria-label="phone">+624 423 26 72</a>
+                            <a href="tel:624-423-26-72" aria-label="+624 423 26 72">+624 423 26 72</a>
                           </span>
                         </div>
                         <div className="footer__contact-mail">
                           <span>
-                            <a href="mailto:support@harry.com" aria-label="email">
+                            <a href="mailto:support@harry.com" aria-label="support@harry.com">
                               support@harry.com
                             </a>
                           </span>
