@@ -75,7 +75,7 @@ const Header = ({ style_2 = false }) => {
                             </li>
                           ) : userInfo?.name ? (
                             <li>
-                              <Link href="/user-dashboard">
+                              <Link href="/user-dashboard" aria-label="user">
                                 <h2 className="text-uppercase tp-user-login-avater">
                                   {userInfo.name[0]}
                                 </h2>
@@ -83,13 +83,13 @@ const Header = ({ style_2 = false }) => {
                             </li>
                           ) : (
                             <li>
-                              <Link href="/login">
+                              <Link href="/login" aria-label="user">
                                 <User />
                               </Link>
                             </li>
                           )}
                           <li>
-                            <Link href="/wishlist">
+                            <Link href="/wishlist" aria-label="wishlist">
                               <Heart />
                               <span className="tp-item-count">
                                 {wishlist.length}
