@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
+    "@next/bundle-analyzer": "^14.0.3",
     "@next/env": "^13.1.6",
     "@popperjs/core": "^2.11.6",
     "@reduxjs/toolkit": "^1.9.1",
