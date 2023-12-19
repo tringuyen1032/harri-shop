@@ -1,62 +1,63 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade } from "swiper";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { EffectFade } from "swiper";
 // internal
-import slider_img_1 from "@assets/img/slider/13/slider-1.png";
-import slider_img_2 from "@assets/img/slider/13/slider-1.png";
-import slider_img_3 from "@assets/img/slider/13/slider-1.png";
+import slider_img_1 from "@assets/img/slider/13/slider-1.webp";
+// import slider_img_2 from "@assets/img/slider/13/slider-1.png";
+// import slider_img_3 from "@assets/img/slider/13/slider-1.png";
 import { RightArrow } from "@svg/index";
 
-const slider_data = [
-  {
-    id: 1,
-    pre_title: (
-      <>
-        Best Ear <br /> Headphones
-      </>
-    ),
-    title: (
-      <>
-        Find Best <br /> Matley Sound.
-      </>
-    ),
-    img: slider_img_1,
-  },
-  {
-    id: 2,
-    pre_title: (
-      <>
-        Best Ear <br /> Headphones
-      </>
-    ),
-    title: (
-      <>
-        Find your <br /> Beats Studio.
-      </>
-    ),
-    img: slider_img_2,
-  },
-  {
-    id: 3,
-    pre_title: (
-      <>
-        Best Ear <br /> Headphones
-      </>
-    ),
-    title: (
-      <>
-        Music To <br /> Fill Your Heart
-      </>
-    ),
-    img: slider_img_3,
-  },
-];
+// const slider_data = [
+//   {
+//     id: 1,
+//     pre_title: (
+//       <>
+//         Best Ear <br /> Headphones
+//       </>
+//     ),
+//     title: (
+//       <>
+//         Find Best <br /> Matley Sound.
+//       </>
+//     ),
+//     img: slider_img_1,
+//   },
+//   {
+//     id: 2,
+//     pre_title: (
+//       <>
+//         Best Ear <br /> Headphones
+//       </>
+//     ),
+//     title: (
+//       <>
+//         Find your <br /> Beats Studio.
+//       </>
+//     ),
+//     img: slider_img_2,
+//   },
+//   {
+//     id: 3,
+//     pre_title: (
+//       <>
+//         Best Ear <br /> Headphones
+//       </>
+//     ),
+//     title: (
+//       <>
+//         Music To <br /> Fill Your Heart
+//       </>
+//     ),
+//     img: slider_img_3,
+//   },
+// ];
 
 const HeroBanner = () => {
-  const [loop, setLoop] = useState(false);
-  useEffect(() => setLoop(true), []);
+  // const [loop, setLoop] = useState(false);
+  // useEffect(() => setLoop(true), []);
   return (
     <>
       <section className="slider__area">
@@ -106,7 +107,8 @@ const HeroBanner = () => {
                       // src={item.img}
                       src={slider_img_1}
                       alt="slider img"
-                      priority
+                      priority={true}
+                      className="position-relative z-1"
                     />
                   </div>
                 </div>
