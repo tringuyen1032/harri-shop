@@ -1,7 +1,7 @@
 import * as dayjs from "dayjs";
 import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
+// import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 //internal import
@@ -37,8 +37,10 @@ const useCheckoutSubmit = () => {
   
   const dispatch = useDispatch();
   const router = useRouter();
-  const stripe = useStripe();
-  const elements = useElements();
+  // const stripe = useStripe();
+  // const elements = useElements();
+  const stripe = null;
+  const elements = null;
 
   const {
     register,
@@ -196,7 +198,8 @@ const useCheckoutSubmit = () => {
     if (!stripe || !elements) {
       return;
     }
-    const card = elements.getElement(CardElement);
+    // const card = elements.getElement(CardElement);
+    const card = null;
     if (card == null) {
       return;
     }
