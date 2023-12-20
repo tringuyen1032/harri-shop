@@ -2,11 +2,11 @@ import React from "react";
 import { useSelector } from "react-redux";
 // internal
 import OrderDetails from "./order-details";
-import PaymentCardElement from "@components/order/pay-card-element";
+// import PaymentCardElement from "@components/order/pay-card-element";
 import OrderSingleCartItem from "./order-single-cart-item";
 
 const OrderArea = ({
-  stripe,
+  // stripe,
   error,
   register,
   errors,
@@ -76,12 +76,12 @@ const OrderArea = ({
               data-bs-parent="#checkoutAccordion"
             >
               <div className="accordion-body">
-                <PaymentCardElement
+                {/* <PaymentCardElement
                   stripe={stripe}
                   cardError={error}
                   cart_products={cart_products}
                   isCheckoutSubmit={isCheckoutSubmit}
-                />
+                /> */}
               </div>
             </div>
           </div>

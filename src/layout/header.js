@@ -112,6 +112,7 @@ const Header = ({ style_2 = false }) => {
                           onClick={() => setIsOffCanvasOpen(true)}
                           type="button"
                           className="hamburger-btn hamburger-btn-black offcanvas-open-btn"
+                          aria-label="Add Coupon"
                         >
                           <span></span>
                           <span></span>
