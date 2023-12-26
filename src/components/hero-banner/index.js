@@ -105,7 +105,7 @@ const HeroBanner = () => {
                     <span className="slider__thumb-13-circle-2"></span>
                     <Image
                       // src={item.img}
-                      src={slider_img_1}
+                      src="https://cdn.nguyenminhtri.com/upload/slider-1-21c0.webp"
                       alt="slider img"
                       priority={true}
                       className="position-relative z-1"
