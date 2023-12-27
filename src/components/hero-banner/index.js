@@ -5,7 +5,7 @@ import Link from "next/link";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { EffectFade } from "swiper";
 // internal
-import slider_img_1 from "@assets/img/slider/13/slider-1.webp";
+// import slider_img_1 from "@assets/img/slider/13/slider-1.webp";
 // import slider_img_2 from "@assets/img/slider/13/slider-1.png";
 // import slider_img_3 from "@assets/img/slider/13/slider-1.png";
 import { RightArrow } from "@svg/index";
@@ -62,14 +62,14 @@ const HeroBanner = () => {
     <>
       <section className="slider__area">
         {/* <Swiper */}
-        <div
-          // className="slider__active slider__active-13 swiper-container"
+        {/* <div
+          className="slider__active slider__active-13 swiper-container"
           slidesPerView={1}
-        // spaceBetween={0}
-        // effect="fade"
-        // loop={loop}
-        // modules={[EffectFade]}
-        >
+        spaceBetween={0}
+        effect="fade"
+        loop={loop}
+        modules={[EffectFade]}
+        > */}
           {/* {slider_data.map((item) => ( */}
           {/* <SwiperSlide */}
           <div
@@ -109,6 +109,7 @@ const HeroBanner = () => {
                       alt="slider img"
                       priority={true}
                       className="position-relative z-1"
+                      fill
                     />
                   </div>
                 </div>
@@ -118,7 +119,7 @@ const HeroBanner = () => {
           </div>
           {/* ))} */}
           {/* </Swiper> */}
-        </div>
+        {/* </div> */}
       </section>
     </>
   );
